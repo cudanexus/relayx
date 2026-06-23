@@ -14,8 +14,8 @@ Latest release: **v8.1.3** — get every platform from the [**Releases page →*
 
 | Platform | Download | Notes |
 |----------|----------|-------|
-| **macOS — Apple Silicon (M-series)** | [Relay-macOS-ARM.dmg](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-ARM.dmg) · [.zip](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-ARM.zip) | Unsigned — see Gatekeeper note below |
-| **macOS — Intel** | [Relay-macOS-Intel.dmg](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-Intel.dmg) · [.zip](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-Intel.zip) | Unsigned — see Gatekeeper note below |
+| **macOS — Apple Silicon (M-series)** | [Relay-macOS-ARM.dmg](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-ARM.dmg) · [.zip](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-ARM.zip) | ✅ Signed & notarized by Apple |
+| **macOS — Intel** | [Relay-macOS-Intel.dmg](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-Intel.dmg) · [.zip](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-Intel.zip) | ✅ Signed & notarized by Apple |
 | **Windows (x64)** | [Relay-Windows.exe](https://github.com/cudanexus/relayx/releases/latest/download/Relay-Windows.exe) | Unsigned — SmartScreen warns on first run |
 | **Android** | [Relay-Android.apk](https://github.com/cudanexus/relayx/releases/latest/download/Relay-Android.apk) | Enable "Install unknown apps" to sideload |
 | **iOS** | **TestFlight** (build 23) | Public download not available — request a TestFlight invite |
@@ -24,9 +24,9 @@ Latest release: **v8.1.3** — get every platform from the [**Releases page →*
 
 ## ✨ Latest changes (v8.1.3)
 
+- **macOS builds are now signed with a Developer ID certificate and notarized by Apple** — they open without Gatekeeper warnings.
 - **New app icon** across all desktop platforms — refreshed branding on macOS and Windows.
 - **Fixed the Windows installer build** — the icon is now generated as a proper multi-size `.ico` (16–256px) so the installer packages correctly.
-- **Refreshed macOS icon** (`.icns`) so the Apple Silicon and Intel apps use the new artwork.
 - **iOS build 23** uploaded to TestFlight.
 - Rebuilt and republished every platform: macOS (ARM + Intel), Windows, Android, and iOS.
 
@@ -45,12 +45,7 @@ Your Antigravity session, terminal, and files never leave your computer; the pho
 
 ## 🛡️ Install notes
 
-**macOS (unsigned):** the apps are not notarized yet, so Gatekeeper may block first launch.
-Right-click the app → **Open**, or run:
-
-```bash
-xattr -dr com.apple.quarantine /Applications/Relay.app
-```
+**macOS:** the apps are **signed and notarized by Apple**, so they open normally — just drag Relay to Applications and launch it.
 
 **Windows (unsigned):** SmartScreen shows a warning on first run — click **More info → Run anyway**.
 
