@@ -10,25 +10,27 @@ This repository hosts the **public download builds**. Source code is kept in a s
 
 ## ⬇️ Download the latest build
 
-Latest release: **v8.1.3** — get every platform from the [**Releases page →**](https://github.com/cudanexus/relayx/releases/latest)
+Latest release: **v8.4.49** — get every platform from the [**Releases page →**](https://github.com/cudanexus/relayx/releases/latest)
 
 | Platform | Download | Notes |
 |----------|----------|-------|
 | **macOS — Apple Silicon (M-series)** | [Relay-macOS-ARM.dmg](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-ARM.dmg) · [.zip](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-ARM.zip) | ✅ Signed & notarized by Apple |
 | **macOS — Intel** | [Relay-macOS-Intel.dmg](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-Intel.dmg) · [.zip](https://github.com/cudanexus/relayx/releases/latest/download/Relay-macOS-Intel.zip) | ✅ Signed & notarized by Apple |
 | **Windows (x64)** | [Relay-Windows.exe](https://github.com/cudanexus/relayx/releases/latest/download/Relay-Windows.exe) | Unsigned — SmartScreen warns on first run |
+| **Linux (x64)** | [Relay-Linux.AppImage](https://github.com/cudanexus/relayx/releases/latest/download/Relay-Linux.AppImage) · [.deb](https://github.com/cudanexus/relayx/releases/latest/download/Relay-Linux.deb) | Ubuntu 20.04 or newer |
 | **Android** | [Relay-Android.apk](https://github.com/cudanexus/relayx/releases/latest/download/Relay-Android.apk) | Enable "Install unknown apps" to sideload |
 | **iOS** | **TestFlight** (build 23) | Public download not available — request a TestFlight invite |
 
 ---
 
-## ✨ Latest changes (v8.1.3)
+## ✨ Latest changes (v8.4.49)
 
-- **macOS builds are now signed with a Developer ID certificate and notarized by Apple** — they open without Gatekeeper warnings.
-- **New app icon** across all desktop platforms — refreshed branding on macOS and Windows.
-- **Fixed the Windows installer build** — the icon is now generated as a proper multi-size `.ico` (16–256px) so the installer packages correctly.
-- **iOS build 23** uploaded to TestFlight.
-- Rebuilt and republished every platform: macOS (ARM + Intel), Windows, Android, and iOS.
+- **Relay now updates itself.** The desktop app checks for new versions in the background, downloads them quietly, and installs them the next time Relay restarts. Choose **Restart to Update** from the app menu, the notification, or your phone (Settings › About) to install right away. Relay never restarts on its own while you work.
+- **More reliable connection** — if the relay service is updated, your computer reconnects on its own instead of showing "Desktop offline" until Relay is restarted.
+- **Security hardening** — pairing details and session controls are only available on the computer itself, never through the relay or a local tunnel.
+- Rebuilt every desktop platform: macOS (Apple silicon + Intel, signed and notarized), Windows, Linux (AppImage + .deb), Android.
+
+> On v8.4.48 or older? Download v8.4.49 once — every version after that arrives by itself.
 
 ---
 
