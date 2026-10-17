@@ -10,7 +10,7 @@ This repository hosts the **public download builds**. Source code is kept in a s
 
 ## ⬇️ Download the latest build
 
-Latest release: **v8.4.49** — get every platform from the [**Releases page →**](https://github.com/cudanexus/relayx/releases/latest)
+Latest release: **v8.4.50** — get every platform from the [**Releases page →**](https://github.com/cudanexus/relayx/releases/latest)
 
 | Platform | Download | Notes |
 |----------|----------|-------|
@@ -23,14 +23,13 @@ Latest release: **v8.4.49** — get every platform from the [**Releases page →
 
 ---
 
-## ✨ Latest changes (v8.4.49)
+## ✨ Latest changes (v8.4.50)
 
-- **Relay now updates itself.** The desktop app checks for new versions in the background, downloads them quietly, and installs them the next time Relay restarts. Choose **Restart to Update** from the app menu, the notification, or your phone (Settings › About) to install right away. Relay never restarts on its own while you work.
-- **More reliable connection** — if the relay service is updated, your computer reconnects on its own instead of showing "Desktop offline" until Relay is restarted.
-- **Security hardening** — pairing details and session controls are only available on the computer itself, never through the relay or a local tunnel.
-- Rebuilt every desktop platform: macOS (Apple silicon + Intel, signed and notarized), Windows, Linux (AppImage + .deb), Android.
+- **Typing on your phone in Antigravity or ZCode:** the text box no longer hides behind the keyboard — it stays right above it so you can see what you type (iPhone, Android and the web app).
+- **Relay updates itself** (since v8.4.49): new versions download in the background and install the next time Relay restarts, or choose **Restart to Update** from the app menu, the notification, or your phone (Settings › About).
+- iPhone: TestFlight build 136.
 
-> On v8.4.48 or older? Download v8.4.49 once — every version after that arrives by itself.
+> On v8.4.48 or older? Download the latest version once — after that, updates arrive by themselves.
 
 ---
 
